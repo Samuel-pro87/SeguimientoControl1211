@@ -8,7 +8,7 @@ require_once 'includes/Config.php';
 $cadenaConexion = "host=" . NOMBRE_SERVIDOR . " dbname=" . BASE_DATOS . " user=" . USUARIO . " password=" . PASS;
 $conexion = pg_connect($cadenaConexion) or die("Error en la Conexión: " . pg_last_error());
 //$id_pry = 0;
-$tipo_compra = 0;
+$tipo_compra=0;
 //$ran = 100;
 //$c = (random_int(1, $ran));
 //echo $c;
@@ -48,7 +48,7 @@ $tipo_compra = 0;
                                 case "Friday":
                                     $d = "Viernes";
                                     break;
-                                case "Sat  urday":
+                                case "Saturday":
                                     $d = "Sabado";
                                     break;
                                 case "Sunday":
@@ -58,7 +58,7 @@ $tipo_compra = 0;
                                     echo "no estas bien.. ";
                                     break;
                             }
-                            echo $d . ", " . date("d/F/Y h:m:s ");
+                              echo $d . ", " . date("d/F/Y h:m:s ");
                             ?><input name="fecha_requisicion" value="<?php echo date("d/M/Y h:m:s"); ?>" hidden>
                     </tr>
                     <tr><th></th><th></th></tr>

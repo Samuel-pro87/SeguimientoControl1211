@@ -1,4 +1,4 @@
-    <?php
+<?php
 
 DEFINE('NOMBRE_SERVIDOR','189.207.247.244');
 DEFINE('BASE_DATOS','allie_predial');

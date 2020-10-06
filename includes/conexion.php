@@ -12,7 +12,6 @@ class Conexion {
                 include_once 'Config.php';
                 self::$conexion = new PDO('pgsql:host=' . NOMBRE_SERVIDOR . ';dbname=' . BASE_DATOS, USUARIO, PASS);
                 self::$conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                //self::$conexion->exec('SET CHARACTER SET utf8'); //Esta linea funciona pero en MySql
                 self::$conexion->exec("SET NAMES 'UTF8'");
                 self::$n = array();
             } catch (PDOException $ex) {
@@ -36,6 +35,5 @@ class Conexion {
         }
     }
 }
-
 Conexion::abrirConexion();
 ?>

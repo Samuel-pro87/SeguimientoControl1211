@@ -1,5 +1,4 @@
 <?php
-
 include_once 'conexion.php';
 $conexion = Conexion::obtenerConexion();
 if (isset($_POST)) {

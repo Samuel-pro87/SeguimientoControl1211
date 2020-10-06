@@ -34,14 +34,13 @@ $cb->l_sidebar_inverse  = true;
 <!-- Page Content -->
 <div class="content">
   <div class="row invisible" data-toggle="appear">
-        <!-- Row #1 -->
         <div class="col-6 col-xl-3">
             <a class="block block-link-pop text-right bg-primary" href="javascript:void(0)">
                 <div class="block-content block-content-full clearfix border-black-op-b border-3x">
-<!--                    <div class="float-left mt-10 d-none d-sm-block">
+                    <div class="float-left mt-10 d-none d-sm-block">
                         <i class="si si-bar-chart fa-3x text-primary-light"></i>
-                    </div>-->
-                    <!--<div class="font-size-h3 font-w600 text-white" data-toggle="countTo" data-speed="1000" data-to="0">0%</div>-->
+                    </div>
+                    <div class="font-size-h3 font-w600 text-white" data-toggle="countTo" data-speed="1000" data-to="0">0%</div>
                     <div class="font-size-sm font-w600 text-uppercase text-white-op">Operaciones</div>
                 </div>
             </a>
@@ -61,10 +60,10 @@ $cb->l_sidebar_inverse  = true;
         <div class="col-6 col-xl-3">
             <a class="block block-link-pop text-right bg-elegance" href="javascript:void(0)">
                 <div class="block-content block-content-full clearfix border-black-op-b border-3x">
-<!--                    <div class="float-left mt-10 d-none d-sm-block">
+                    <div class="float-left mt-10 d-none d-sm-block">
                         <i class="si si-envelope-letter fa-3x text-elegance-light"></i>
-                    </div>-->
-                    <!--<div class="font-size-h3 font-w600 text-white" data-toggle="countTo" data-speed="1000" data-to="25">0</div>-->
+                    </div>
+                    <div class="font-size-h3 font-w600 text-white" data-toggle="countTo" data-speed="1000" data-to="25">0</div>
                     <div class="font-size-sm font-w600 text-uppercase text-white-op">Recursos Humanos</div>
                 </div>
             </a>
@@ -72,15 +71,14 @@ $cb->l_sidebar_inverse  = true;
         <div class="col-6 col-xl-3">
             <a class="block block-link-pop text-right bg-corporate" href="#">
                 <div class="block-content block-content-full clearfix border-black-op-b border-3x">
-<!--                    <div class="float-left mt-10 d-none d-sm-block">
+                    <div class="float-left mt-10 d-none d-sm-block">
                         <i class="si si-fire fa-3x text-corporate-light"></i>
-                    </div>-->
-                    <!--<div class="font-size-h3 font-w600 text-white" data-toggle="countTo" data-speed="1000" data-to="1000">0</div>-->
+                    </div>
+                    <div class="font-size-h3 font-w600 text-white" data-toggle="countTo" data-speed="1000" data-to="1000">0</div>
                     <div class="font-size-sm font-w600 text-uppercase text-white-op">Sistemas</div>
                 </div>
             </a>
         </div>
-        <!-- END Row #1 -->
     </div>
 </div>
 <!-- END Page Content -->
