@@ -149,13 +149,13 @@ $id_pry = 1;
                 </thead>
                 <tr scope="row">                   
                     <td></td>
-                    <td><input type="text" placeholder="ej. Computadora" name="concepto_solicitado" id="concepto" class="form-control" autofocus required></td>
-                    <td><input type="text" name="medida" id="medida" placeholder="ej. Peiza" class="form-control" required></td>     
-                    <td><input type="text" name="cantidad" id="cantidad" class="form-control" required></td>       
-                    <td><input type="text" name="marca" id="marca" class="form-control"></td>      
-                    <td><input type="text" name="modelo" id="modelo" class="form-control"></td>       
-                    <td><input type="text" name="detalle" id="detalle" class="form-control"></td>
-                    <td><input type="submit" name="agregar" id="enviar" value="Agregar" class="btn btn-success form-control"></td>
+                    <td><input type="text" placeholder="ej. Computadora" name="concepto_solicitado" id="concepto" class="form-control" autofocus required autocomplete="off"></td>
+                    <td><input type="text" name="medida" id="medida" placeholder="ej. Peiza" class="form-control" required autocomplete="off"></td>     
+                    <td><input type="text" name="cantidad" id="cantidad" class="form-control" required autocomplete="off"></td>       
+                    <td><input type="text" name="marca" id="marca" class="form-control" autocomplete="off"></td>      
+                    <td><input type="text" name="modelo" id="modelo" class="form-control" autocomplete="off"></td>       
+                    <td><input type="text" name="detalle" id="detalle" class="form-control" autocomplete="off"></td>
+                    <td><input type="submit" name="agregar" id="enviar" value="Agregar" class="btn btn-success form-control" autocomplete="off"></td>
                 </tr>
 
                 <?php
@@ -193,7 +193,7 @@ $id_pry = 1;
                     <!-- Rounded -->
                     <div class="">
                         <div class="block-content">
-                            <a href="includes/addRequisicion.php?folio=<?php echo $reg['folio_requisicion_compra'];?>"><button type="button" class="btn btn-rounded btn-primary min-width-125 mb-10" data-toggle="tooltip" title="terminar solicitud">Enviar</button></a><br>
+                            <a href="includes/addRequisicion.php?folio=<?php echo $reg['folio_requisicion_compra'];?>"><button type="button" class="btn btn-rounded btn-primary min-width-125 mb-10" data-toggle="tooltip" title="terminar solicitud"><i class="fa fa-share-square"></i></button></a><br>
                         </div>
                     </div>
                     <!-- END Rounded -->

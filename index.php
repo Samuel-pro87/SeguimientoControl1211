@@ -15,7 +15,7 @@ $conexion = Conexion::obtenerConexion();
         }
         ?>
 <html>
-    <<head>
+    <head>
   <!--Cabeza-->
     </head>
     <body> <?php require 'inc/_global/config.php'; ?>

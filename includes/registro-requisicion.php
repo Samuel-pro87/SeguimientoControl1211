@@ -1,5 +1,4 @@
 <?php
-
 extract($_POST);
 include_once 'conexion.php';
 include_once 'requisicion.php';
@@ -45,7 +44,7 @@ if ($validador["estatus"] == 1) {
         } else {
             include_once '../Mensajes.php';
         }
-
+        $folio = ltrim($fol, " ");
         header('Location: ../nuevesito.php?folio=' . $folio . '');
     } else {
         include_once '../Mensajes.php';

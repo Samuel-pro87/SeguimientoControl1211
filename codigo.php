@@ -124,11 +124,11 @@ $tipo_compra=0;
 //                                echo $tipo_compra;
 //                                die();
                                     ?>
-                                    <label>Única</label>
+                                    <label for="tipo_compra_1">Única</label>
                                 </div>
                                 <div class="custom-control custom-radio custom-control-inline mb-5">
                                     <input type="radio" name="tipo_compra" value="2" checked id="tipo_compra_2">
-                                    <label>Recurrente</label>
+                                    <label for="tipo_compra_2">Recurrente</label>
                                     <?php
                                     $tipo_compra = 2;
 //                                echo $tipo_compra;
@@ -208,13 +208,13 @@ $tipo_compra=0;
                     </tr>
                 </thead>  
                 <tr>                   
-                    <td><input type="text" placeholder="ej. Computadora" name="concepto_solicitado" id="concepto" class="form-control" required></td>
-                    <td><input type="text" name="medida" id="medida" placeholder="ej. Peiza" class="form-control" required></td>     
-                    <td><input type="text" name="cantidad" id="cantidad" class="form-control" required></td>       
-                    <td><input type="text" name="marca" id="marca" class="form-control"></td>      
-                    <td><input type="text" name="modelo" id="modelo" class="form-control"></td>       
-                    <td><input type="text" name="detalle" id="detalle" class="form-control"></td>
-                    <td><input type="submit" name="crear" id="enviar" value="Crear" class="btn btn-success form-control"></td>
+                    <td><input type="text" placeholder="ej. Computadora" name="concepto_solicitado" id="concepto" class="form-control" required autocomplete="off"></td>
+                    <td><input type="text" name="medida" id="medida" placeholder="ej. Peiza" class="form-control" required autocomplete="off"></td>     
+                    <td><input type="text" name="cantidad" id="cantidad" class="form-control" required autocomplete="off"></td>       
+                    <td><input type="text" name="marca" id="marca" class="form-control" autocomplete="off"></td>      
+                    <td><input type="text" name="modelo" id="modelo" class="form-control" autocomplete="off"></td>       
+                    <td><input type="text" name="detalle" id="detalle" class="form-control" autocomplete="off"></td>
+                    <td><input type="submit" name="crear" id="enviar" value="Crear" class="btn btn-success form-control" autocomplete="off"></td>
                 </tr>
             </table>
         </div>

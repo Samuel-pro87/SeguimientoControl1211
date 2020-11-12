@@ -384,8 +384,8 @@ $conexion = pg_connect($cadenaConexion) or die("Error en la Conexión: " . pg_la
                                 <div class="col-6 mb-5">
                                     <input type="text" class="form-control fol" id="fol" name="fol" hidden>
                                     <input type="text" class="form-control id" id="ids" name="ids" hidden>
-                                    <button type="button" name="add"  id="<?php echo $reg['id_requisicion_compra']; ?>" class=" form-control btn add_cot btn_new btn-block btn-hero btn-noborder btn-rounded btn-alt-primary">
-                                        <i class="fa fa-plus mr-10"></i> Agregar
+                                    <button type="button" name="add"  id="<?php echo $reg['id_requisicion_compra']; ?>" class="form-control btn add_cot btn_new btn-block btn-hero btn-noborder btn-rounded btn-alt-primary">
+                                        <i class="fa fa-plus mr-10">Agregar</i> 
                                     </button>
                                 </div>
                                 <div class="col-sm-6 mb-5">
@@ -450,13 +450,14 @@ $conexion = pg_connect($cadenaConexion) or die("Error en la Conexión: " . pg_la
         //clase para enviar datos para modificar precios y observaciones
         $('.add_cot').click(function (e) {
             e.preventDefault();
+            
             $.ajax({
                 url: 'includes/cotizacion.php',
                 type: 'POST',
                 async: true,
                 data: $('#form_add_coti').serialize(),
                 success: function (response) {
-                    if (response != 'ERROR ') {
+                    if (response != 'ERROR') {
 //                        console.log(response);
                         closeModal();
                         $('.modal').modal('hide');
@@ -474,14 +475,14 @@ $conexion = pg_connect($cadenaConexion) or die("Error en la Conexión: " . pg_la
                         $('.row' + $a + ' .colimp2').html(info.i2);
                         $('.row' + $a + ' .colimp3').html(info.i3);
                         
-                        $('.alertCoti').html('<p> Articulo Cotizado !!! </p>');
+                        $('.modal').html('<p> Articulo Cotizado !!! </p>');
 
                     } else {
                         $('alertaCoti').html('<p> Error al cotizar </p>');
                     }
                 },
                 error: function (error) {
-                    console.log(error);
+                    console.err('errorr' + error);
                 }
             });
         });

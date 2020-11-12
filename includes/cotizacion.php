@@ -32,6 +32,7 @@ if (isset($_POST)) {
 
             $cotizacionInsertado = $sentencia->execute();
             $cotizacionInsertado = true; //true
+            
             $data['id'] = $idst;
             $data['precio1'] = $precio1;
             $data['precio2'] = $precio2;
